@@ -1,0 +1,120 @@
+{
+  "name": "developer-roadmap-learning",
+  "version": "1.0.0",
+  "displayName": "Developer Roadmap Learning Plugin",
+  "description": "Comprehensive plugin providing learning paths for 69+ developer roles from the developer-roadmap.sh repository. Covers programming languages, frameworks, cloud platforms, databases, AI/ML, and specialized technical roles.",
+  "author": "Claude Code Community",
+  "license": "MIT",
+  "homepage": "https://roadmap.sh",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kamranahmedse/developer-roadmap"
+  },
+  "keywords": [
+    "learning",
+    "developer-roles",
+    "career-path",
+    "roadmap",
+    "skill-development",
+    "programming",
+    "web-development",
+    "cloud-infrastructure",
+    "ai-ml",
+    "databases"
+  ],
+  "agents": [
+    {
+      "name": "programming-fundamentals",
+      "description": "Programming Languages & Core Fundamentals agent covering 11 programming languages"
+    },
+    {
+      "name": "web-development",
+      "description": "Frontend, Backend & Web Frameworks specialist for web development roles"
+    },
+    {
+      "name": "mobile-cloud",
+      "description": "Mobile Development and Cloud/Infrastructure specialist"
+    },
+    {
+      "name": "data-infrastructure",
+      "description": "Databases, Data Engineering, and Data Science foundations"
+    },
+    {
+      "name": "ai-ml-specialist",
+      "description": "AI/ML Engineering and Data Science specialist roles"
+    },
+    {
+      "name": "architecture-design",
+      "description": "System Architecture, Design Patterns, and Advanced Systems Design"
+    },
+    {
+      "name": "specialized-roles",
+      "description": "Specialized technical roles, management, and non-technical career paths"
+    }
+  ],
+  "commands": [
+    {
+      "name": "explore-roadmap",
+      "description": "Explore and learn from a specific developer roadmap"
+    },
+    {
+      "name": "learning-path",
+      "description": "Get a personalized learning path for a specific role"
+    },
+    {
+      "name": "compare-roles",
+      "description": "Compare learning requirements between multiple roles"
+    },
+    {
+      "name": "skill-assessment",
+      "description": "Assess your current skills against a roadmap"
+    },
+    {
+      "name": "find-role",
+      "description": "Discover roles matching your interests and experience"
+    }
+  ],
+  "skills": [
+    {
+      "name": "languages-fundamentals",
+      "description": "Programming language selection and core concepts"
+    },
+    {
+      "name": "frontend-frameworks",
+      "description": "Frontend frameworks and UI development"
+    },
+    {
+      "name": "backend-frameworks",
+      "description": "Backend frameworks and API development"
+    },
+    {
+      "name": "cloud-devops",
+      "description": "Cloud platforms and DevOps tools"
+    },
+    {
+      "name": "databases-storage",
+      "description": "Database selection and management"
+    },
+    {
+      "name": "ai-ml-tools",
+      "description": "AI/ML tools and frameworks"
+    },
+    {
+      "name": "architecture-patterns",
+      "description": "System design and architectural patterns"
+    }
+  ],
+  "hooks": {
+    "supported": [
+      "user-prompt-submit",
+      "command-execution"
+    ]
+  },
+  "settings": {
+    "cacheRoadmaps": true,
+    "enableAdvancedPaths": true,
+    "supportBeginnersRoadmaps": true
+  },
+  "minClaudeVersion": "2.0.0",
+  "releaseNotes": "Initial release with 69 developer roadmaps, 7 specialized agents, and comprehensive learning paths"
+}

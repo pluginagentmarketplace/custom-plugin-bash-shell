@@ -1,0 +1,179 @@
+{
+  "hooks": [
+    {
+      "event": "user-prompt-submit",
+      "description": "Triggered when user submits a prompt containing learning-related keywords",
+      "conditions": {
+        "keywords": [
+          "learn",
+          "roadmap",
+          "skill",
+          "developer",
+          "path",
+          "competency",
+          "course",
+          "tutorial",
+          "how to learn",
+          "getting started"
+        ]
+      },
+      "actions": [
+        {
+          "type": "suggest-command",
+          "command": "/explore-roadmap",
+          "message": "I found you're interested in learning! Use `/explore-roadmap [role]` to explore a specific developer role."
+        },
+        {
+          "type": "suggest-command",
+          "command": "/learning-path",
+          "message": "Want a personalized curriculum? Try `/learning-path [role] --duration weeks`"
+        }
+      ]
+    },
+    {
+      "event": "user-prompt-submit",
+      "description": "Triggered when user asks about career transitions or comparisons",
+      "conditions": {
+        "keywords": [
+          "compare",
+          "versus",
+          "vs",
+          "transition",
+          "switch",
+          "choose between",
+          "difference between",
+          "which is better"
+        ]
+      },
+      "actions": [
+        {
+          "type": "suggest-command",
+          "command": "/compare-roles",
+          "message": "Comparing roles? Use `/compare-roles role1 role2 --aspect learning-curve` for detailed comparison."
+        }
+      ]
+    },
+    {
+      "event": "user-prompt-submit",
+      "description": "Triggered when user asks about finding appropriate roles",
+      "conditions": {
+        "keywords": [
+          "find",
+          "discover",
+          "match",
+          "suitable",
+          "role",
+          "position",
+          "career",
+          "interested in",
+          "what should I learn"
+        ]
+      },
+      "actions": [
+        {
+          "type": "suggest-command",
+          "command": "/find-role",
+          "message": "Let's find the right role for you! Use `/find-role --interests keywords --skills current-skills --goals career-goals`"
+        }
+      ]
+    },
+    {
+      "event": "user-prompt-submit",
+      "description": "Triggered when user wants to assess their current skill level",
+      "conditions": {
+        "keywords": [
+          "assess",
+          "evaluate",
+          "level",
+          "where am I",
+          "my skills",
+          "proficiency",
+          "test my knowledge",
+          "benchmark"
+        ]
+      },
+      "actions": [
+        {
+          "type": "suggest-command",
+          "command": "/skill-assessment",
+          "message": "Let's assess your skills! Use `/skill-assessment [role] --format detailed` to see your progress."
+        }
+      ]
+    },
+    {
+      "event": "command-execution",
+      "description": "Track command usage for analytics",
+      "actions": [
+        {
+          "type": "log-analytics",
+          "data": ["command-name", "execution-timestamp", "role-parameter"]
+        }
+      ]
+    },
+    {
+      "event": "command-execution",
+      "description": "Provide contextual help after command execution",
+      "actions": [
+        {
+          "type": "suggest-next-steps",
+          "based-on": "command-type",
+          "suggestions": {
+            "explore-roadmap": [
+              "After exploring, use `/learning-path` for a personalized curriculum",
+              "Check `/skill-assessment` to see where you currently stand",
+              "Compare with other roles using `/compare-roles`"
+            ],
+            "learning-path": [
+              "Start with the recommended resources in Phase 1",
+              "Build projects to reinforce learning",
+              "Use `/skill-assessment` after 4-6 weeks to track progress"
+            ],
+            "skill-assessment": [
+              "Focus on your highest gap areas first",
+              "Check `/learning-path` for a structured curriculum",
+              "Revisit assessment every 3-6 months"
+            ],
+            "compare-roles": [
+              "After comparing, use `/find-role` if unsure which fits you",
+              "Explore the top role choice with `/explore-roadmap`",
+              "Create a learning path with `/learning-path`"
+            ],
+            "find-role": [
+              "Explore your top 3 matches with `/explore-roadmap`",
+              "Use `/compare-roles` to decide between finalists",
+              "Create a learning path with `/learning-path [role]`"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "automation": {
+    "enabled": true,
+    "features": [
+      "intelligent-command-suggestions",
+      "progress-tracking",
+      "learning-milestone-tracking",
+      "role-based-notifications"
+    ]
+  },
+  "analytics": {
+    "enabled": true,
+    "track": [
+      "command-usage",
+      "role-popularity",
+      "learning-paths-created",
+      "skill-assessments",
+      "user-preferences"
+    ]
+  },
+  "personalization": {
+    "enabled": true,
+    "features": [
+      "learning-style-adaptation",
+      "progress-based-recommendations",
+      "role-affinity-scoring",
+      "career-path-suggestions"
+    ]
+  }
+}
