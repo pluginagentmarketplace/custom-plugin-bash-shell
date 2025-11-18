@@ -1,199 +1,319 @@
-# Developer Roadmap Learning Plugin
+# Custom Plugin Bash Shell Toolkit
 
-A comprehensive Claude Code plugin providing guided learning paths for 69+ developer roles from [roadmap.sh](https://roadmap.sh). Master any technical career path with structured learning plans, skill assessments, and intelligent guidance.
+Professional toolkit for developing, testing, and deploying Claude Code plugins using bash scripting. Create production-ready plugins with intelligent automation, comprehensive testing, and streamlined deployment.
 
 ## 🎯 What This Plugin Does
 
-Transform your developer career journey with:
+Streamline your Claude Code plugin development:
 
-- **69+ Role Coverage** - Every role on roadmap.sh included
-- **Structured Learning Paths** - Personalized 4-phase curricula
-- **Skill Assessment** - Measure progress against industry standards
-- **Role Comparison** - Compare career paths side-by-side
-- **Intelligent Discovery** - Find roles matching your interests
+- **Scaffold** - Generate plugin structure instantly
+- **Validate** - Verify manifest and components
+- **Test** - Run comprehensive quality checks
+- **Deploy** - Release with confidence
 
 ## 🚀 Quick Start
 
-### Installation
+### First Command
+```bash
+/scaffold-plugin my-plugin
+```
+
+### Complete Workflow
+```bash
+/scaffold-plugin my-plugin        # Create structure
+/validate-plugin                  # Check validity
+/test-plugin                      # Run tests
+/deploy-plugin                    # Release
+```
+
+## 📚 Components
+
+### 5 Specialized Agents
+
+1. **Plugin Architect** - Structure and design decisions
+2. **Bash Specialist** - Shell scripting and automation
+3. **Testing & QA** - Quality assurance strategies
+4. **Deployment & DevOps** - Release management
+5. **Automation & Hooks** - Event automation workflows
+
+### 5 Skill Modules
+
+- **bash-scripting** - Shell scripting fundamentals and patterns
+- **plugin-architecture** - Official Claude Code plugin format
+- **testing-validation** - Testing strategies and quality gates
+- **deployment** - Version management and release workflows
+- **hook-automation** - Event automation and workflows
+
+### 4 Slash Commands
+
+#### /scaffold-plugin
+Generate new plugin with proper structure
+```bash
+/scaffold-plugin my-awesome-plugin --template advanced
+```
+
+#### /validate-plugin
+Check manifest, structure, and components
+```bash
+/validate-plugin --strict --verbose
+```
+
+#### /test-plugin
+Run comprehensive test suite
+```bash
+/test-plugin --coverage
+```
+
+#### /deploy-plugin
+Release plugin to marketplace
+```bash
+/deploy-plugin --version 1.1.0
+```
+
+## 🎓 Learning Path
+
+### Phase 1: Understand
+- Explore plugin architecture with Plugin Architect agent
+- Review `plugin-architecture` skill
+- Study official format documentation
+
+### Phase 2: Build
+- Use `/scaffold-plugin` to create structure
+- Use Bash Specialist agent for scripting help
+- Follow bash-scripting skill examples
+
+### Phase 3: Verify
+- Use `/validate-plugin` to check structure
+- Use `/test-plugin` to run quality checks
+- Review Testing & QA agent guidance
+
+### Phase 4: Release
+- Use `/deploy-plugin` to release
+- Follow deployment skill for versioning
+- Use Deployment & DevOps agent guidance
+
+## 📋 Official Format Compliance
+
+This toolkit enforces official Claude Code plugin format:
+
+✅ `.claude-plugin/plugin.json` - Manifest
+✅ `agents/` - YAML frontmatter markdown files
+✅ `commands/` - Slash command documentation
+✅ `skills/` - SKILL.md modules
+✅ `hooks/` - Automation configuration
+✅ Complete documentation
+
+## 💡 Example Workflow
+
+### Creating Your First Plugin
 
 ```bash
-# Load from local directory
-claude-code load ./developer-roadmap-learning
+# 1. Generate structure
+/scaffold-plugin learning-system
+
+# 2. Edit your components
+# Edit agents/01-*.md
+# Edit commands/command.md
+# Edit skills/*/SKILL.md
+# Edit hooks/hooks.json
+
+# 3. Validate structure
+/validate-plugin
+
+# 4. Run tests
+/test-plugin
+
+# 5. Deploy to marketplace
+/deploy-plugin --version 1.0.0
 ```
 
-### First Commands
+### Common Tasks
 
+**Start developing a plugin**
 ```bash
-# Explore a specific role
-/explore-roadmap python
-
-# Get a personalized learning path
-/learning-path full-stack --duration 12 --experience beginner
-
-# Discover your ideal role
-/find-role --interests web --skills javascript
-
-# Assess your current level
-/skill-assessment react --format detailed
-
-# Compare career paths
-/compare-roles frontend backend
+/scaffold-plugin project-name
 ```
 
-## 📚 Plugin Components
-
-### 7 Specialized Agents
-
-1. **Programming Fundamentals** - Python, JavaScript, Java, Go, Rust, C++, PHP, Kotlin, TypeScript, Swift, Shell
-2. **Web Development** - React, Vue, Angular, Frontend, Backend, Full-Stack, Next.js, CSS, HTML
-3. **Mobile & Cloud** - Android, iOS, Flutter, AWS, Docker, Kubernetes, DevOps, Linux, Terraform
-4. **Data Infrastructure** - SQL, MongoDB, Redis, PostgreSQL, Data Engineering, Data Analysis
-5. **AI/ML Specialist** - Machine Learning, AI Engineering, Data Science, MLOps, LLMs, AI Agents
-6. **Architecture & Design** - System Design, Software Architecture, Design Patterns, SOLID Principles
-7. **Specialized Roles** - Blockchain, Cybersecurity, Game Development, GraphQL, Management, UX Design
-
-### 5 Interactive Commands
-
-- `/explore-roadmap` - Deep dive into specific roles
-- `/learning-path` - Create personalized curriculum
-- `/compare-roles` - Compare career paths
-- `/skill-assessment` - Measure your proficiency
-- `/find-role` - Discover your ideal role
-
-### 7 Skill Modules
-
-Practical guides with code examples for:
-- Programming Languages
-- Frontend Frameworks
-- Backend Frameworks  
-- Cloud & DevOps
-- Databases & Storage
-- AI/ML Tools
-- Architecture Patterns
-
-## 🎓 69 Covered Roles
-
-**Programming Languages (11):** Python, JavaScript, Java, Go, Rust, PHP, C++, Kotlin, TypeScript, Swift UI, Shell/Bash
-
-**Frontend & UI (7):** React, Vue, Angular, Frontend, CSS, HTML, Design Systems
-
-**Backend & Frameworks (7):** Node.js, Spring Boot, Laravel, ASP.NET Core, Backend, Full-Stack, Next.js
-
-**Mobile (4):** Android, iOS, Flutter, React Native
-
-**Cloud & Infrastructure (7):** AWS, Docker, Kubernetes, DevOps, Linux, Terraform, Cloudflare
-
-**Databases (4):** PostgreSQL, MongoDB, Redis, SQL
-
-**Data & AI/ML (8):** AI Engineer, Machine Learning, Data Engineer, Data Scientist, MLOps, Data Analyst, AI Agents, AI Red Teaming
-
-**Specialized (16+):** System Design, Software Architect, Blockchain, Cybersecurity, Game Developer, GraphQL, Code Review, QA, API Design, and more
-
-**Non-Technical (5):** Product Manager, Engineering Manager, Technical Writer, UX Designer, BI Analyst
-
-**Emerging (2):** Prompt Engineering, Git & GitHub
-
-## 📖 Learning Path Example
-
-Each role includes a 4-phase curriculum:
-
-### Phase 1: Fundamentals
-- Prerequisites, core concepts, learning resources
-
-### Phase 2: Building Skills
-- Technologies, hands-on projects, best practices
-
-### Phase 3: Specialization  
-- Advanced topics, real-world scenarios, patterns
-
-### Phase 4: Mastery
-- Industry standards, open source, production systems
-
-## 💡 Example Workflows
-
-### Learning React
+**Check if plugin is valid**
 ```bash
-/explore-roadmap react
-/learning-path react --duration 12
-/skill-assessment react
-/compare-roles react vue --aspect job-market
+/validate-plugin --strict
 ```
 
-### Career Transition
+**Ensure quality before release**
 ```bash
-/find-role --interests automation --goals startup
-/compare-roles full-stack backend
-/learning-path backend --experience beginner
+/test-plugin --coverage
 ```
 
-### ML Journey with Python
+**Release version 2.0.0**
 ```bash
-/find-role --skills python --interests machine-learning
-/learning-path machine-learning --experience intermediate
-/skill-assessment machine-learning
+/deploy-plugin --version 2.0.0
 ```
 
-## 🔧 Plugin Structure
+## 🔧 Key Concepts
 
-```
-developer-roadmap-learning/
-├── .claude-plugin/plugin.json
-├── agents/ (7 markdown files)
-├── skills/ (7 SKILL.md files)
-├── commands/ (5 markdown files)
-├── hooks/hooks.json
-└── README.md
-```
+### Plugin.json
+Central manifest defining your plugin:
+- Metadata (name, version, description)
+- Agent references
+- Command references
+- Skill references
+- Hook configuration
 
-## 📊 Data Source
+### Agents
+Expert specialists in markdown:
+- YAML frontmatter for metadata
+- Focused expertise area
+- Clear descriptions and capabilities
+- Content covering the domain
 
-Built on [developer-roadmap](https://github.com/kamranahmedse/developer-roadmap):
-- 69 comprehensive roadmaps
-- 224,000+ GitHub stars
-- 2.1M+ active users
-- MIT licensed
+### Commands
+User-triggered workflows:
+- Clear documentation
+- Usage instructions
+- Practical examples
+- Step-by-step guidance
 
-## 🌟 Key Features
+### Skills
+Reusable technical knowledge:
+- SKILL.md in subdirectory
+- Quick start examples
+- Code samples
+- Best practices
 
-- **Intelligent Suggestions** - Context-aware command recommendations
-- **Progress Tracking** - Automated milestone tracking
-- **Personalization** - Adaptive paths based on your background
-- **Career Insights** - Job market data and salary ranges
-- **Industry Benchmarks** - Compare against professionals at all levels
-- **Real Projects** - Curated project ideas for practice
+### Hooks
+Intelligent automation:
+- Event-based triggers
+- Keyword detection
+- Smart suggestions
+- Workflow guidance
 
-## 🚀 Getting Started
+## 🌟 Features
 
-1. Load the plugin
-2. Try `/explore-roadmap python` or `/find-role`
-3. Create a learning path with `/learning-path [role]`
-4. Track progress with `/skill-assessment`
-5. Start learning!
+- **Bash Integration** - Automate everything with shell scripts
+- **Proper Structure** - Official Claude Code format compliance
+- **Validation** - Catch errors before deployment
+- **Testing** - Comprehensive quality assurance
+- **Deployment** - One-command releases
+- **Automation** - Intelligent hooks and workflows
+- **Documentation** - Complete skill modules
+
+## 📊 Plugin Overview
+
+| Component | Count | Purpose |
+|-----------|-------|---------|
+| Agents | 5 | Domain expertise |
+| Skills | 5 | Technical knowledge |
+| Commands | 4 | User workflows |
+| Hooks | 5 | Event automation |
+| Scripts | Optional | Custom automation |
+
+## 🚦 Getting Started
+
+1. **Understand the Format**
+   - Read `plugin-architecture` skill
+   - Review official Claude Code docs
+
+2. **Create Your Plugin**
+   - Use `/scaffold-plugin` command
+   - Choose template (basic or advanced)
+
+3. **Develop Components**
+   - Edit agents with YAML frontmatter
+   - Create slash commands with examples
+   - Add skills with code samples
+
+4. **Validate & Test**
+   - Use `/validate-plugin` regularly
+   - Run `/test-plugin` before release
+
+5. **Deploy**
+   - Use `/deploy-plugin` to release
+   - Follow semantic versioning
+
+## 📖 Documentation
+
+### For Quick Questions
+- Use agent guidance (/scaffold-plugin suggests next steps)
+- Check command help sections
+- Review skill modules
+
+### For Detailed Learning
+- Read `plugin-architecture` skill
+- Study deployment skill for releases
+- Explore bash-scripting for automation
+
+### For Troubleshooting
+- Run `/validate-plugin --verbose`
+- Run `/test-plugin` to see issues
+- Check error messages carefully
+
+## 🎯 Best Practices
+
+1. **Semantic Versioning** - Follow MAJOR.MINOR.PATCH
+2. **Proper Structure** - Use official format strictly
+3. **Clear Documentation** - Write for users
+4. **Code Examples** - Show, don't tell
+5. **Test Before Release** - Quality first
+6. **Keep Changelog** - Document all changes
+7. **Use Hooks** - Automate workflows
+
+## 🔗 Integration
+
+This plugin helps you create other plugins:
+- Complete plugin development toolkit
+- All official format requirements met
+- Professional quality standards
+- Production-ready deployment
+
+## 📦 What Comes After
+
+After developing your plugin:
+- Load locally in Claude Code
+- Distribute to GitHub
+- Submit to marketplace
+- Monitor user adoption
+- Plan next iteration
 
 ## ❓ FAQ
 
-**How long to learn each role?** 3-12 months depending on background and role
+**How long does it take to create a plugin?**
+With this toolkit: 1-2 hours for basic plugins, 4-8 hours for advanced
 
-**Can I customize paths?** Yes, use `--duration` and `--experience` parameters
+**Can I customize the scaffolding?**
+Yes, scaffolding creates templates you can fully customize
 
-**Are projects included?** Yes, each path includes project ideas
+**Do I need to know bash?**
+For basic plugins, no. The `bash-scripting` skill teaches what you need
 
-**Can I switch roles?** Absolutely, the plugin helps you explore alternatives
+**How do I test my plugin?**
+Use `/test-plugin` for automated testing
 
-**Is data current?** Yes, references roadmap.sh directly for latest information
+**When should I deploy?**
+After `/validate-plugin` and `/test-plugin` pass
+
+## 🚀 Next Steps
+
+1. Try `/scaffold-plugin` to create your first plugin
+2. Review the created structure
+3. Read the skill modules for your task
+4. Build your plugin using the agents
+5. Validate with `/validate-plugin`
+6. Test with `/test-plugin`
+7. Deploy with `/deploy-plugin`
 
 ## 📄 License
 
-MIT License - See developer-roadmap repository
+MIT - See LICENSE file
 
-## 🎯 Quick Links
+## 🙋 Support
 
-- [Official Roadmap Site](https://roadmap.sh)
-- [Developer Roadmap GitHub](https://github.com/kamranahmedse/developer-roadmap)
-- [Claude Code Docs](https://docs.claude.com)
+- Check the skill modules for detailed help
+- Use agent guidance for specific tasks
+- Review commands for workflow help
+- Read documentation thoroughly
 
 ---
 
-**Happy learning! 🚀**
+**Ready to create amazing Claude Code plugins?**
 
-Transform your developer career with structured, intelligent guidance.
+Start with `/scaffold-plugin your-plugin-name` and let the toolkit guide you!

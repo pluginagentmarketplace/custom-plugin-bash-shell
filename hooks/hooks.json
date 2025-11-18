@@ -2,146 +2,133 @@
   "hooks": [
     {
       "event": "user-prompt-submit",
-      "description": "Triggered when user submits a prompt containing learning-related keywords",
+      "description": "Suggest commands when user mentions plugin development keywords",
       "conditions": {
         "keywords": [
-          "learn",
-          "roadmap",
-          "skill",
-          "developer",
-          "path",
-          "competency",
-          "course",
-          "tutorial",
-          "how to learn",
-          "getting started"
+          "plugin",
+          "create",
+          "scaffold",
+          "develop",
+          "build",
+          "test",
+          "validate",
+          "deploy",
+          "release",
+          "bash",
+          "automate"
         ]
       },
       "actions": [
         {
           "type": "suggest-command",
-          "command": "/explore-roadmap",
-          "message": "I found you're interested in learning! Use `/explore-roadmap [role]` to explore a specific developer role."
-        },
-        {
-          "type": "suggest-command",
-          "command": "/learning-path",
-          "message": "Want a personalized curriculum? Try `/learning-path [role] --duration weeks`"
+          "command": "/scaffold-plugin",
+          "message": "Ready to create a new Claude Code plugin?"
         }
       ]
     },
     {
       "event": "user-prompt-submit",
-      "description": "Triggered when user asks about career transitions or comparisons",
+      "description": "Suggest validation when user talks about checking or validating",
       "conditions": {
         "keywords": [
-          "compare",
-          "versus",
-          "vs",
-          "transition",
-          "switch",
-          "choose between",
-          "difference between",
-          "which is better"
+          "validate",
+          "check",
+          "verify",
+          "test",
+          "ensure",
+          "correct",
+          "quality",
+          "problem",
+          "error",
+          "issue"
         ]
       },
       "actions": [
         {
           "type": "suggest-command",
-          "command": "/compare-roles",
-          "message": "Comparing roles? Use `/compare-roles role1 role2 --aspect learning-curve` for detailed comparison."
+          "command": "/validate-plugin",
+          "message": "Want to validate your plugin structure?"
         }
       ]
     },
     {
       "event": "user-prompt-submit",
-      "description": "Triggered when user asks about finding appropriate roles",
+      "description": "Suggest testing when user mentions testing",
       "conditions": {
         "keywords": [
-          "find",
-          "discover",
-          "match",
-          "suitable",
-          "role",
-          "position",
-          "career",
-          "interested in",
-          "what should I learn"
+          "test",
+          "testing",
+          "test case",
+          "coverage",
+          "quality assurance",
+          "qa",
+          "verify"
         ]
       },
       "actions": [
         {
           "type": "suggest-command",
-          "command": "/find-role",
-          "message": "Let's find the right role for you! Use `/find-role --interests keywords --skills current-skills --goals career-goals`"
+          "command": "/test-plugin",
+          "message": "Run comprehensive tests on your plugin?"
         }
       ]
     },
     {
       "event": "user-prompt-submit",
-      "description": "Triggered when user wants to assess their current skill level",
+      "description": "Suggest deployment when user mentions releasing or publishing",
       "conditions": {
         "keywords": [
-          "assess",
-          "evaluate",
-          "level",
-          "where am I",
-          "my skills",
-          "proficiency",
-          "test my knowledge",
-          "benchmark"
+          "deploy",
+          "release",
+          "publish",
+          "submit",
+          "marketplace",
+          "launch",
+          "go live",
+          "version"
         ]
       },
       "actions": [
         {
           "type": "suggest-command",
-          "command": "/skill-assessment",
-          "message": "Let's assess your skills! Use `/skill-assessment [role] --format detailed` to see your progress."
+          "command": "/deploy-plugin",
+          "message": "Ready to deploy your plugin?"
         }
       ]
     },
     {
       "event": "command-execution",
-      "description": "Track command usage for analytics",
-      "actions": [
-        {
-          "type": "log-analytics",
-          "data": ["command-name", "execution-timestamp", "role-parameter"]
-        }
-      ]
-    },
-    {
-      "event": "command-execution",
-      "description": "Provide contextual help after command execution",
+      "description": "Suggest next steps after command execution",
       "actions": [
         {
           "type": "suggest-next-steps",
           "based-on": "command-type",
           "suggestions": {
-            "explore-roadmap": [
-              "After exploring, use `/learning-path` for a personalized curriculum",
-              "Check `/skill-assessment` to see where you currently stand",
-              "Compare with other roles using `/compare-roles`"
+            "scaffold-plugin": [
+              "1. Edit agents in agents/ directory",
+              "2. Create commands in commands/ directory",
+              "3. Add skills in skills/ directory",
+              "4. Run /validate-plugin to check structure",
+              "5. Run /test-plugin to verify everything",
+              "6. Use /deploy-plugin when ready"
             ],
-            "learning-path": [
-              "Start with the recommended resources in Phase 1",
-              "Build projects to reinforce learning",
-              "Use `/skill-assessment` after 4-6 weeks to track progress"
+            "validate-plugin": [
+              "Review any errors reported",
+              "Fix validation issues",
+              "Run /validate-plugin again to confirm",
+              "Once valid, proceed to /test-plugin"
             ],
-            "skill-assessment": [
-              "Focus on your highest gap areas first",
-              "Check `/learning-path` for a structured curriculum",
-              "Revisit assessment every 3-6 months"
+            "test-plugin": [
+              "All tests passed! 🎉",
+              "Your plugin is quality-assured",
+              "Ready to deploy with /deploy-plugin",
+              "Or make more improvements"
             ],
-            "compare-roles": [
-              "After comparing, use `/find-role` if unsure which fits you",
-              "Explore the top role choice with `/explore-roadmap`",
-              "Create a learning path with `/learning-path`"
-            ],
-            "find-role": [
-              "Explore your top 3 matches with `/explore-roadmap`",
-              "Use `/compare-roles` to decide between finalists",
-              "Create a learning path with `/learning-path [role]`"
+            "deploy-plugin": [
+              "✓ Plugin deployed successfully!",
+              "Your plugin is now available",
+              "Monitor for user feedback",
+              "Plan next iteration"
             ]
           }
         }
@@ -152,28 +139,18 @@
     "enabled": true,
     "features": [
       "intelligent-command-suggestions",
-      "progress-tracking",
-      "learning-milestone-tracking",
-      "role-based-notifications"
+      "workflow-guidance",
+      "error-recovery",
+      "progress-tracking"
     ]
   },
-  "analytics": {
+  "telemetry": {
     "enabled": true,
     "track": [
       "command-usage",
-      "role-popularity",
-      "learning-paths-created",
-      "skill-assessments",
+      "deployment-frequency",
+      "plugin-quality-metrics",
       "user-preferences"
-    ]
-  },
-  "personalization": {
-    "enabled": true,
-    "features": [
-      "learning-style-adaptation",
-      "progress-based-recommendations",
-      "role-affinity-scoring",
-      "career-path-suggestions"
     ]
   }
 }

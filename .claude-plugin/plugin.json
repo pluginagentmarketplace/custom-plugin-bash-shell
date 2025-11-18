@@ -1,107 +1,78 @@
 {
-  "name": "developer-roadmap-learning",
+  "name": "custom-plugin-bash-shell",
   "version": "1.0.0",
-  "displayName": "Developer Roadmap Learning Plugin",
-  "description": "Comprehensive plugin providing learning paths for 69+ developer roles from the developer-roadmap.sh repository. Covers programming languages, frameworks, cloud platforms, databases, AI/ML, and specialized technical roles.",
+  "displayName": "Custom Plugin Bash Shell Toolkit",
+  "description": "Professional toolkit for developing, testing, and deploying Claude Code plugins using bash scripting. Includes plugin scaffolding, validation, automation hooks, and deployment strategies.",
   "author": "Claude Code Community",
   "license": "MIT",
-  "homepage": "https://roadmap.sh",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/kamranahmedse/developer-roadmap"
-  },
   "keywords": [
-    "learning",
-    "developer-roles",
-    "career-path",
-    "roadmap",
-    "skill-development",
-    "programming",
-    "web-development",
-    "cloud-infrastructure",
-    "ai-ml",
-    "databases"
+    "plugin-development",
+    "bash-scripting",
+    "claude-code",
+    "automation",
+    "testing",
+    "deployment"
   ],
   "agents": [
     {
-      "name": "programming-fundamentals",
-      "description": "Programming Languages & Core Fundamentals agent covering 11 programming languages"
+      "name": "plugin-architect",
+      "description": "Plugin structure, manifest design, and architecture decisions"
     },
     {
-      "name": "web-development",
-      "description": "Frontend, Backend & Web Frameworks specialist for web development roles"
+      "name": "bash-specialist",
+      "description": "Bash scripting, shell commands, and automation"
     },
     {
-      "name": "mobile-cloud",
-      "description": "Mobile Development and Cloud/Infrastructure specialist"
+      "name": "testing-qa",
+      "description": "Plugin testing, validation, and quality assurance"
     },
     {
-      "name": "data-infrastructure",
-      "description": "Databases, Data Engineering, and Data Science foundations"
+      "name": "deployment-devops",
+      "description": "Plugin deployment, publishing, and release management"
     },
     {
-      "name": "ai-ml-specialist",
-      "description": "AI/ML Engineering and Data Science specialist roles"
-    },
-    {
-      "name": "architecture-design",
-      "description": "System Architecture, Design Patterns, and Advanced Systems Design"
-    },
-    {
-      "name": "specialized-roles",
-      "description": "Specialized technical roles, management, and non-technical career paths"
+      "name": "automation-hooks",
+      "description": "Claude Code hooks, automation workflows, and integrations"
     }
   ],
   "commands": [
     {
-      "name": "explore-roadmap",
-      "description": "Explore and learn from a specific developer roadmap"
+      "name": "scaffold-plugin",
+      "description": "Generate plugin boilerplate with proper structure"
     },
     {
-      "name": "learning-path",
-      "description": "Get a personalized learning path for a specific role"
+      "name": "validate-plugin",
+      "description": "Validate plugin manifest and structure"
     },
     {
-      "name": "compare-roles",
-      "description": "Compare learning requirements between multiple roles"
+      "name": "test-plugin",
+      "description": "Run tests and quality checks on plugin"
     },
     {
-      "name": "skill-assessment",
-      "description": "Assess your current skills against a roadmap"
-    },
-    {
-      "name": "find-role",
-      "description": "Discover roles matching your interests and experience"
+      "name": "deploy-plugin",
+      "description": "Deploy plugin to Claude Code marketplace"
     }
   ],
   "skills": [
     {
-      "name": "languages-fundamentals",
-      "description": "Programming language selection and core concepts"
+      "name": "bash-scripting",
+      "description": "Shell scripting fundamentals and advanced techniques"
     },
     {
-      "name": "frontend-frameworks",
-      "description": "Frontend frameworks and UI development"
+      "name": "plugin-architecture",
+      "description": "Claude Code plugin structure and components"
     },
     {
-      "name": "backend-frameworks",
-      "description": "Backend frameworks and API development"
+      "name": "testing-validation",
+      "description": "Plugin testing strategies and validation"
     },
     {
-      "name": "cloud-devops",
-      "description": "Cloud platforms and DevOps tools"
+      "name": "deployment",
+      "description": "Plugin publishing and distribution"
     },
     {
-      "name": "databases-storage",
-      "description": "Database selection and management"
-    },
-    {
-      "name": "ai-ml-tools",
-      "description": "AI/ML tools and frameworks"
-    },
-    {
-      "name": "architecture-patterns",
-      "description": "System design and architectural patterns"
+      "name": "hook-automation",
+      "description": "Claude Code hooks and automation workflows"
     }
   ],
   "hooks": {
@@ -110,11 +81,6 @@
       "command-execution"
     ]
   },
-  "settings": {
-    "cacheRoadmaps": true,
-    "enableAdvancedPaths": true,
-    "supportBeginnersRoadmaps": true
-  },
   "minClaudeVersion": "2.0.0",
-  "releaseNotes": "Initial release with 69 developer roadmaps, 7 specialized agents, and comprehensive learning paths"
+  "releaseNotes": "Initial release with complete plugin development toolkit"
 }
