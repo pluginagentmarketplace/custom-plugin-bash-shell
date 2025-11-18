@@ -1,8 +1,8 @@
 {
   "name": "custom-plugin-bash-shell",
-  "version": "2.0.0",
-  "displayName": "Developer Roadmap Learning & Career Plugin",
-  "description": "Master 65+ developer roles with AI-guided learning paths. Get personalized roadmaps, skill assessments, and career progression guidance for every tech career path.",
+  "version": "2.1.0",
+  "displayName": "Developer Roadmap Learning & Career Plugin v2.1",
+  "description": "Master 65+ developer roles with ultra-detailed, AI-guided learning paths. Comprehensive career guidance with code examples, project ideas, interview prep, and production-grade skill modules for every tech career path.",
   "author": "Claude Code Community",
   "license": "MIT",
   "repository": {
@@ -171,5 +171,5 @@
     ]
   },
   "minClaudeVersion": "2.0.0",
-  "releaseNotes": "v2.0.0: Complete rebuild with 7 agents covering 65+ developer roles, 20 skill modules, 8 powerful commands, intelligent learning paths"
+  "releaseNotes": "v2.1.0: Ultra-detailed comprehensive enhancement with production-grade content, code examples, tool comparisons, real-world scenarios, advanced commands, intelligent hooks, comprehensive documentation"
 }
