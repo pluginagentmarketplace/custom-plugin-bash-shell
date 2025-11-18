@@ -2,155 +2,201 @@
   "hooks": [
     {
       "event": "user-prompt-submit",
-      "description": "Suggest commands when user mentions plugin development keywords",
+      "description": "Career exploration - suggest roadmap exploration",
       "conditions": {
         "keywords": [
-          "plugin",
-          "create",
-          "scaffold",
-          "develop",
+          "learn",
+          "career",
+          "developer",
+          "role",
+          "path",
+          "skill",
+          "technology",
+          "frontend",
+          "backend",
+          "cloud",
+          "data",
+          "ai",
+          "ml",
+          "mobile"
+        ]
+      },
+      "actions": [
+        {
+          "type": "suggest-command",
+          "command": "/explore-roadmap",
+          "message": "Explore a specific developer role? Try /explore-roadmap [role]"
+        }
+      ]
+    },
+    {
+      "event": "user-prompt-submit",
+      "description": "Learning path planning",
+      "conditions": {
+        "keywords": [
+          "learning path",
+          "curriculum",
+          "personalized",
+          "beginner",
+          "intermediate",
+          "advanced",
+          "how long",
+          "roadmap"
+        ]
+      },
+      "actions": [
+        {
+          "type": "suggest-command",
+          "command": "/my-learning-path",
+          "message": "Get personalized learning path: /my-learning-path [role]"
+        }
+      ]
+    },
+    {
+      "event": "user-prompt-submit",
+      "description": "Role comparison",
+      "conditions": {
+        "keywords": [
+          "compare",
+          "versus",
+          "vs",
+          "difference",
+          "choose between",
+          "which is better",
+          "similar"
+        ]
+      },
+      "actions": [
+        {
+          "type": "suggest-command",
+          "command": "/compare-roles",
+          "message": "Compare roles: /compare-roles [role1] [role2]"
+        }
+      ]
+    },
+    {
+      "event": "user-prompt-submit",
+      "description": "Skill assessment",
+      "conditions": {
+        "keywords": [
+          "assess",
+          "evaluate",
+          "level",
+          "proficiency",
+          "benchmark",
+          "where am i"
+        ]
+      },
+      "actions": [
+        {
+          "type": "suggest-command",
+          "command": "/skill-assessment",
+          "message": "Assess your skills: /skill-assessment [role]"
+        }
+      ]
+    },
+    {
+      "event": "user-prompt-submit",
+      "description": "Role discovery",
+      "conditions": {
+        "keywords": [
+          "find",
+          "discover",
+          "suitable",
+          "which role",
+          "interested in",
+          "right for me"
+        ]
+      },
+      "actions": [
+        {
+          "type": "suggest-command",
+          "command": "/find-my-role",
+          "message": "Find your ideal role: /find-my-role --interests [keywords]"
+        }
+      ]
+    },
+    {
+      "event": "user-prompt-submit",
+      "description": "Career growth",
+      "conditions": {
+        "keywords": [
+          "career growth",
+          "progression",
+          "advance",
+          "promotion",
+          "senior",
+          "next step"
+        ]
+      },
+      "actions": [
+        {
+          "type": "suggest-command",
+          "command": "/career-progression",
+          "message": "Plan progression: /career-progression --from [current] --to [target]"
+        }
+      ]
+    },
+    {
+      "event": "user-prompt-submit",
+      "description": "Projects and practice",
+      "conditions": {
+        "keywords": [
+          "project",
           "build",
-          "test",
-          "validate",
-          "deploy",
-          "release",
-          "bash",
-          "automate"
+          "practice",
+          "hands-on",
+          "portfolio",
+          "exercise"
         ]
       },
       "actions": [
         {
           "type": "suggest-command",
-          "command": "/scaffold-plugin",
-          "message": "Ready to create a new Claude Code plugin?"
+          "command": "/project-ideas",
+          "message": "Get project ideas: /project-ideas [role] --level beginner"
         }
       ]
     },
     {
       "event": "user-prompt-submit",
-      "description": "Suggest validation when user talks about checking or validating",
+      "description": "Interview prep",
       "conditions": {
         "keywords": [
-          "validate",
-          "check",
-          "verify",
-          "test",
-          "ensure",
-          "correct",
-          "quality",
-          "problem",
-          "error",
-          "issue"
+          "interview",
+          "prepare",
+          "question",
+          "system design",
+          "coding",
+          "technical interview"
         ]
       },
       "actions": [
         {
           "type": "suggest-command",
-          "command": "/validate-plugin",
-          "message": "Want to validate your plugin structure?"
-        }
-      ]
-    },
-    {
-      "event": "user-prompt-submit",
-      "description": "Suggest testing when user mentions testing",
-      "conditions": {
-        "keywords": [
-          "test",
-          "testing",
-          "test case",
-          "coverage",
-          "quality assurance",
-          "qa",
-          "verify"
-        ]
-      },
-      "actions": [
-        {
-          "type": "suggest-command",
-          "command": "/test-plugin",
-          "message": "Run comprehensive tests on your plugin?"
-        }
-      ]
-    },
-    {
-      "event": "user-prompt-submit",
-      "description": "Suggest deployment when user mentions releasing or publishing",
-      "conditions": {
-        "keywords": [
-          "deploy",
-          "release",
-          "publish",
-          "submit",
-          "marketplace",
-          "launch",
-          "go live",
-          "version"
-        ]
-      },
-      "actions": [
-        {
-          "type": "suggest-command",
-          "command": "/deploy-plugin",
-          "message": "Ready to deploy your plugin?"
-        }
-      ]
-    },
-    {
-      "event": "command-execution",
-      "description": "Suggest next steps after command execution",
-      "actions": [
-        {
-          "type": "suggest-next-steps",
-          "based-on": "command-type",
-          "suggestions": {
-            "scaffold-plugin": [
-              "1. Edit agents in agents/ directory",
-              "2. Create commands in commands/ directory",
-              "3. Add skills in skills/ directory",
-              "4. Run /validate-plugin to check structure",
-              "5. Run /test-plugin to verify everything",
-              "6. Use /deploy-plugin when ready"
-            ],
-            "validate-plugin": [
-              "Review any errors reported",
-              "Fix validation issues",
-              "Run /validate-plugin again to confirm",
-              "Once valid, proceed to /test-plugin"
-            ],
-            "test-plugin": [
-              "All tests passed! 🎉",
-              "Your plugin is quality-assured",
-              "Ready to deploy with /deploy-plugin",
-              "Or make more improvements"
-            ],
-            "deploy-plugin": [
-              "✓ Plugin deployed successfully!",
-              "Your plugin is now available",
-              "Monitor for user feedback",
-              "Plan next iteration"
-            ]
-          }
+          "command": "/interview-prep",
+          "message": "Prepare for interviews: /interview-prep [role]"
         }
       ]
     }
   ],
   "automation": {
     "enabled": true,
+    "intelligence": "advanced",
     "features": [
-      "intelligent-command-suggestions",
-      "workflow-guidance",
-      "error-recovery",
-      "progress-tracking"
+      "smart-keyword-detection",
+      "contextual-suggestions",
+      "learning-flow-guidance",
+      "personalized-recommendations"
     ]
   },
   "telemetry": {
     "enabled": true,
     "track": [
+      "role-popularity",
+      "learning-paths-created",
       "command-usage",
-      "deployment-frequency",
-      "plugin-quality-metrics",
-      "user-preferences"
+      "user-interests"
     ]
   }
 }

@@ -1,86 +1,175 @@
 {
   "name": "custom-plugin-bash-shell",
-  "version": "1.0.0",
-  "displayName": "Custom Plugin Bash Shell Toolkit",
-  "description": "Professional toolkit for developing, testing, and deploying Claude Code plugins using bash scripting. Includes plugin scaffolding, validation, automation hooks, and deployment strategies.",
+  "version": "2.0.0",
+  "displayName": "Developer Roadmap Learning & Career Plugin",
+  "description": "Master 65+ developer roles with AI-guided learning paths. Get personalized roadmaps, skill assessments, and career progression guidance for every tech career path.",
   "author": "Claude Code Community",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kamranahmedse/developer-roadmap"
+  },
   "keywords": [
-    "plugin-development",
-    "bash-scripting",
-    "claude-code",
-    "automation",
-    "testing",
-    "deployment"
+    "developer-roadmap",
+    "career-guidance",
+    "learning-paths",
+    "skill-assessment",
+    "tech-careers",
+    "professional-development"
   ],
   "agents": [
     {
-      "name": "plugin-architect",
-      "description": "Plugin structure, manifest design, and architecture decisions"
+      "name": "backend-developer",
+      "description": "Backend development, APIs, server architecture, databases & frameworks"
     },
     {
-      "name": "bash-specialist",
-      "description": "Bash scripting, shell commands, and automation"
+      "name": "frontend-developer",
+      "description": "Frontend development, web frameworks, styling, UX/UI optimization"
     },
     {
-      "name": "testing-qa",
-      "description": "Plugin testing, validation, and quality assurance"
+      "name": "cloud-devops-engineer",
+      "description": "Cloud platforms, infrastructure, DevOps, containers, deployment"
     },
     {
-      "name": "deployment-devops",
-      "description": "Plugin deployment, publishing, and release management"
+      "name": "database-data-specialist",
+      "description": "Databases, data engineering, data analysis, big data, pipelines"
     },
     {
-      "name": "automation-hooks",
-      "description": "Claude Code hooks, automation workflows, and integrations"
+      "name": "mobile-developer",
+      "description": "Mobile development, native apps, cross-platform, performance"
+    },
+    {
+      "name": "ai-ml-engineer",
+      "description": "AI/ML engineering, machine learning, deep learning, LLMs, data science"
+    },
+    {
+      "name": "system-architect",
+      "description": "System design, architecture patterns, scalability, security, performance"
     }
   ],
   "commands": [
     {
-      "name": "scaffold-plugin",
-      "description": "Generate plugin boilerplate with proper structure"
+      "name": "explore-roadmap",
+      "description": "Explore a specific developer role roadmap in detail"
     },
     {
-      "name": "validate-plugin",
-      "description": "Validate plugin manifest and structure"
+      "name": "my-learning-path",
+      "description": "Get personalized learning path based on your goals"
     },
     {
-      "name": "test-plugin",
-      "description": "Run tests and quality checks on plugin"
+      "name": "compare-roles",
+      "description": "Compare two developer roles side-by-side"
     },
     {
-      "name": "deploy-plugin",
-      "description": "Deploy plugin to Claude Code marketplace"
+      "name": "skill-assessment",
+      "description": "Assess your skills against industry standards"
+    },
+    {
+      "name": "find-my-role",
+      "description": "Discover the perfect developer role for you"
+    },
+    {
+      "name": "career-progression",
+      "description": "Plan your career growth and skill development"
+    },
+    {
+      "name": "project-ideas",
+      "description": "Get hands-on project ideas for skill building"
+    },
+    {
+      "name": "interview-prep",
+      "description": "Prepare for technical interviews for your target role"
     }
   ],
   "skills": [
     {
-      "name": "bash-scripting",
-      "description": "Shell scripting fundamentals and advanced techniques"
+      "name": "backend-frameworks",
+      "description": "Node.js, Spring Boot, Laravel, ASP.NET Core, API development"
     },
     {
-      "name": "plugin-architecture",
-      "description": "Claude Code plugin structure and components"
+      "name": "frontend-frameworks",
+      "description": "React, Vue, Angular, Next.js, CSS, HTML, design systems"
     },
     {
-      "name": "testing-validation",
-      "description": "Plugin testing strategies and validation"
+      "name": "cloud-platforms",
+      "description": "AWS, GCP, Azure, cloud architecture, multi-cloud strategies"
     },
     {
-      "name": "deployment",
-      "description": "Plugin publishing and distribution"
+      "name": "devops-tools",
+      "description": "Docker, Kubernetes, CI/CD, Terraform, infrastructure automation"
     },
     {
-      "name": "hook-automation",
-      "description": "Claude Code hooks and automation workflows"
+      "name": "databases-sql",
+      "description": "PostgreSQL, MySQL, database design, optimization, scaling"
+    },
+    {
+      "name": "nosql-data",
+      "description": "MongoDB, Redis, ElasticSearch, data pipelines, caching"
+    },
+    {
+      "name": "mobile-platforms",
+      "description": "Android, iOS, Flutter, React Native, cross-platform development"
+    },
+    {
+      "name": "ai-ml-frameworks",
+      "description": "TensorFlow, PyTorch, scikit-learn, ML pipelines, model deployment"
+    },
+    {
+      "name": "llm-ai-agents",
+      "description": "LLMs, prompt engineering, AI agents, autonomous systems"
+    },
+    {
+      "name": "data-engineering",
+      "description": "ETL, data lakes, warehousing, big data tools, streaming"
+    },
+    {
+      "name": "system-design",
+      "description": "Scalability, high availability, distributed systems, microservices"
+    },
+    {
+      "name": "design-patterns",
+      "description": "Software patterns, architectural patterns, SOLID principles"
+    },
+    {
+      "name": "security-compliance",
+      "description": "Application security, infrastructure security, compliance standards"
+    },
+    {
+      "name": "performance-optimization",
+      "description": "Web performance, database optimization, system tuning"
+    },
+    {
+      "name": "testing-qa",
+      "description": "Unit testing, integration testing, E2E testing, test automation"
+    },
+    {
+      "name": "code-review",
+      "description": "Code quality, best practices, refactoring, code reviews"
+    },
+    {
+      "name": "devrel-community",
+      "description": "Developer relations, technical writing, community building"
+    },
+    {
+      "name": "product-management",
+      "description": "Product strategy, technical PM, roadmapping"
+    },
+    {
+      "name": "leadership-mentoring",
+      "description": "Engineering management, team leadership, career development"
+    },
+    {
+      "name": "blockchain-web3",
+      "description": "Blockchain, smart contracts, crypto, Web3 development"
     }
   ],
   "hooks": {
     "supported": [
       "user-prompt-submit",
-      "command-execution"
+      "command-execution",
+      "agent-invocation"
     ]
   },
   "minClaudeVersion": "2.0.0",
-  "releaseNotes": "Initial release with complete plugin development toolkit"
+  "releaseNotes": "v2.0.0: Complete rebuild with 7 agents covering 65+ developer roles, 20 skill modules, 8 powerful commands, intelligent learning paths"
 }
