@@ -1,0 +1,202 @@
+{
+  "hooks": [
+    {
+      "event": "user-prompt-submit",
+      "description": "Career exploration - suggest roadmap exploration",
+      "conditions": {
+        "keywords": [
+          "learn",
+          "career",
+          "developer",
+          "role",
+          "path",
+          "skill",
+          "technology",
+          "frontend",
+          "backend",
+          "cloud",
+          "data",
+          "ai",
+          "ml",
+          "mobile"
+        ]
+      },
+      "actions": [
+        {
+          "type": "suggest-command",
+          "command": "/explore-roadmap",
+          "message": "Explore a specific developer role? Try /explore-roadmap [role]"
+        }
+      ]
+    },
+    {
+      "event": "user-prompt-submit",
+      "description": "Learning path planning",
+      "conditions": {
+        "keywords": [
+          "learning path",
+          "curriculum",
+          "personalized",
+          "beginner",
+          "intermediate",
+          "advanced",
+          "how long",
+          "roadmap"
+        ]
+      },
+      "actions": [
+        {
+          "type": "suggest-command",
+          "command": "/my-learning-path",
+          "message": "Get personalized learning path: /my-learning-path [role]"
+        }
+      ]
+    },
+    {
+      "event": "user-prompt-submit",
+      "description": "Role comparison",
+      "conditions": {
+        "keywords": [
+          "compare",
+          "versus",
+          "vs",
+          "difference",
+          "choose between",
+          "which is better",
+          "similar"
+        ]
+      },
+      "actions": [
+        {
+          "type": "suggest-command",
+          "command": "/compare-roles",
+          "message": "Compare roles: /compare-roles [role1] [role2]"
+        }
+      ]
+    },
+    {
+      "event": "user-prompt-submit",
+      "description": "Skill assessment",
+      "conditions": {
+        "keywords": [
+          "assess",
+          "evaluate",
+          "level",
+          "proficiency",
+          "benchmark",
+          "where am i"
+        ]
+      },
+      "actions": [
+        {
+          "type": "suggest-command",
+          "command": "/skill-assessment",
+          "message": "Assess your skills: /skill-assessment [role]"
+        }
+      ]
+    },
+    {
+      "event": "user-prompt-submit",
+      "description": "Role discovery",
+      "conditions": {
+        "keywords": [
+          "find",
+          "discover",
+          "suitable",
+          "which role",
+          "interested in",
+          "right for me"
+        ]
+      },
+      "actions": [
+        {
+          "type": "suggest-command",
+          "command": "/find-my-role",
+          "message": "Find your ideal role: /find-my-role --interests [keywords]"
+        }
+      ]
+    },
+    {
+      "event": "user-prompt-submit",
+      "description": "Career growth",
+      "conditions": {
+        "keywords": [
+          "career growth",
+          "progression",
+          "advance",
+          "promotion",
+          "senior",
+          "next step"
+        ]
+      },
+      "actions": [
+        {
+          "type": "suggest-command",
+          "command": "/career-progression",
+          "message": "Plan progression: /career-progression --from [current] --to [target]"
+        }
+      ]
+    },
+    {
+      "event": "user-prompt-submit",
+      "description": "Projects and practice",
+      "conditions": {
+        "keywords": [
+          "project",
+          "build",
+          "practice",
+          "hands-on",
+          "portfolio",
+          "exercise"
+        ]
+      },
+      "actions": [
+        {
+          "type": "suggest-command",
+          "command": "/project-ideas",
+          "message": "Get project ideas: /project-ideas [role] --level beginner"
+        }
+      ]
+    },
+    {
+      "event": "user-prompt-submit",
+      "description": "Interview prep",
+      "conditions": {
+        "keywords": [
+          "interview",
+          "prepare",
+          "question",
+          "system design",
+          "coding",
+          "technical interview"
+        ]
+      },
+      "actions": [
+        {
+          "type": "suggest-command",
+          "command": "/interview-prep",
+          "message": "Prepare for interviews: /interview-prep [role]"
+        }
+      ]
+    }
+  ],
+  "automation": {
+    "enabled": true,
+    "intelligence": "advanced",
+    "features": [
+      "smart-keyword-detection",
+      "contextual-suggestions",
+      "learning-flow-guidance",
+      "personalized-recommendations"
+    ]
+  },
+  "telemetry": {
+    "enabled": true,
+    "track": [
+      "role-popularity",
+      "learning-paths-created",
+      "command-usage",
+      "user-interests"
+    ]
+  }
+}

@@ -1,0 +1,175 @@
+{
+  "name": "custom-plugin-bash-shell",
+  "version": "2.1.0",
+  "displayName": "Developer Roadmap Learning & Career Plugin v2.1",
+  "description": "Master 65+ developer roles with ultra-detailed, AI-guided learning paths. Comprehensive career guidance with code examples, project ideas, interview prep, and production-grade skill modules for every tech career path.",
+  "author": "Claude Code Community",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kamranahmedse/developer-roadmap"
+  },
+  "keywords": [
+    "developer-roadmap",
+    "career-guidance",
+    "learning-paths",
+    "skill-assessment",
+    "tech-careers",
+    "professional-development"
+  ],
+  "agents": [
+    {
+      "name": "backend-developer",
+      "description": "Backend development, APIs, server architecture, databases & frameworks"
+    },
+    {
+      "name": "frontend-developer",
+      "description": "Frontend development, web frameworks, styling, UX/UI optimization"
+    },
+    {
+      "name": "cloud-devops-engineer",
+      "description": "Cloud platforms, infrastructure, DevOps, containers, deployment"
+    },
+    {
+      "name": "database-data-specialist",
+      "description": "Databases, data engineering, data analysis, big data, pipelines"
+    },
+    {
+      "name": "mobile-developer",
+      "description": "Mobile development, native apps, cross-platform, performance"
+    },
+    {
+      "name": "ai-ml-engineer",
+      "description": "AI/ML engineering, machine learning, deep learning, LLMs, data science"
+    },
+    {
+      "name": "system-architect",
+      "description": "System design, architecture patterns, scalability, security, performance"
+    }
+  ],
+  "commands": [
+    {
+      "name": "explore-roadmap",
+      "description": "Explore a specific developer role roadmap in detail"
+    },
+    {
+      "name": "my-learning-path",
+      "description": "Get personalized learning path based on your goals"
+    },
+    {
+      "name": "compare-roles",
+      "description": "Compare two developer roles side-by-side"
+    },
+    {
+      "name": "skill-assessment",
+      "description": "Assess your skills against industry standards"
+    },
+    {
+      "name": "find-my-role",
+      "description": "Discover the perfect developer role for you"
+    },
+    {
+      "name": "career-progression",
+      "description": "Plan your career growth and skill development"
+    },
+    {
+      "name": "project-ideas",
+      "description": "Get hands-on project ideas for skill building"
+    },
+    {
+      "name": "interview-prep",
+      "description": "Prepare for technical interviews for your target role"
+    }
+  ],
+  "skills": [
+    {
+      "name": "backend-frameworks",
+      "description": "Node.js, Spring Boot, Laravel, ASP.NET Core, API development"
+    },
+    {
+      "name": "frontend-frameworks",
+      "description": "React, Vue, Angular, Next.js, CSS, HTML, design systems"
+    },
+    {
+      "name": "cloud-platforms",
+      "description": "AWS, GCP, Azure, cloud architecture, multi-cloud strategies"
+    },
+    {
+      "name": "devops-tools",
+      "description": "Docker, Kubernetes, CI/CD, Terraform, infrastructure automation"
+    },
+    {
+      "name": "databases-sql",
+      "description": "PostgreSQL, MySQL, database design, optimization, scaling"
+    },
+    {
+      "name": "nosql-data",
+      "description": "MongoDB, Redis, ElasticSearch, data pipelines, caching"
+    },
+    {
+      "name": "mobile-platforms",
+      "description": "Android, iOS, Flutter, React Native, cross-platform development"
+    },
+    {
+      "name": "ai-ml-frameworks",
+      "description": "TensorFlow, PyTorch, scikit-learn, ML pipelines, model deployment"
+    },
+    {
+      "name": "llm-ai-agents",
+      "description": "LLMs, prompt engineering, AI agents, autonomous systems"
+    },
+    {
+      "name": "data-engineering",
+      "description": "ETL, data lakes, warehousing, big data tools, streaming"
+    },
+    {
+      "name": "system-design",
+      "description": "Scalability, high availability, distributed systems, microservices"
+    },
+    {
+      "name": "design-patterns",
+      "description": "Software patterns, architectural patterns, SOLID principles"
+    },
+    {
+      "name": "security-compliance",
+      "description": "Application security, infrastructure security, compliance standards"
+    },
+    {
+      "name": "performance-optimization",
+      "description": "Web performance, database optimization, system tuning"
+    },
+    {
+      "name": "testing-qa",
+      "description": "Unit testing, integration testing, E2E testing, test automation"
+    },
+    {
+      "name": "code-review",
+      "description": "Code quality, best practices, refactoring, code reviews"
+    },
+    {
+      "name": "devrel-community",
+      "description": "Developer relations, technical writing, community building"
+    },
+    {
+      "name": "product-management",
+      "description": "Product strategy, technical PM, roadmapping"
+    },
+    {
+      "name": "leadership-mentoring",
+      "description": "Engineering management, team leadership, career development"
+    },
+    {
+      "name": "blockchain-web3",
+      "description": "Blockchain, smart contracts, crypto, Web3 development"
+    }
+  ],
+  "hooks": {
+    "supported": [
+      "user-prompt-submit",
+      "command-execution",
+      "agent-invocation"
+    ]
+  },
+  "minClaudeVersion": "2.0.0",
+  "releaseNotes": "v2.1.0: Ultra-detailed comprehensive enhancement with production-grade content, code examples, tool comparisons, real-world scenarios, advanced commands, intelligent hooks, comprehensive documentation"
+}
