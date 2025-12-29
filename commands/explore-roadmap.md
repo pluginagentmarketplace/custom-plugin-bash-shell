@@ -1,3 +1,9 @@
+---
+name: explore-roadmap
+description: Explore Roadmap
+allowed-tools: Read
+---
+
 # Explore Roadmap
 
 Deep dive into any of the 65+ developer roles from roadmap.sh. Get comprehensive learning paths, technologies, best practices, and career insights.

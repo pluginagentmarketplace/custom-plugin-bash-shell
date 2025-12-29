@@ -1,3 +1,9 @@
+---
+name: career-progression
+description: Career Progression
+allowed-tools: Read
+---
+
 # Career Progression
 
 Plan your career growth. Understand progression paths, skill development, and advancement opportunities.

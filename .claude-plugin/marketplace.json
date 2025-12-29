@@ -1,0 +1,15 @@
+{
+  "name": "pluginagentmarketplace-bash-shell",
+  "owner": {
+    "name": "Plugin Agent Marketplace",
+    "email": "pluginagentmarketplace@gmail.com"
+  },
+  "plugins": [
+    {
+      "name": "custom-plugin-bash-shell",
+      "source": "./",
+      "description": "Claude Code plugin for bash shell development",
+      "version": "1.0.0"
+    }
+  ]
+}

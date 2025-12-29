@@ -1,3 +1,9 @@
+---
+name: compare-roles
+description: Compare Roles
+allowed-tools: Read
+---
+
 # Compare Roles
 
 Compare two or more roles side-by-side. See differences in skills, learning time, job market, and career prospects.

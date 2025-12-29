@@ -1,3 +1,9 @@
+---
+name: interview-prep
+description: Interview Prep
+allowed-tools: Read
+---
+
 # Interview Prep
 
 Prepare for technical interviews for your target role. Practice questions, system design, and interview strategies.

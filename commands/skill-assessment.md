@@ -1,3 +1,9 @@
+---
+name: skill-assessment
+description: Skill Assessment
+allowed-tools: Read
+---
+
 # Skill Assessment
 
 Evaluate your skills against industry standards. Identify gaps and get targeted improvement suggestions.

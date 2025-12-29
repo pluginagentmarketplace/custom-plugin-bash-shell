@@ -1,3 +1,9 @@
+---
+name: find-my-role
+description: Find My Role
+allowed-tools: Read
+---
+
 # Find My Role
 
 Discover your ideal developer role based on your interests, strengths, and career goals.

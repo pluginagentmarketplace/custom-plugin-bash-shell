@@ -1,3 +1,9 @@
+---
+name: my-learning-path
+description: My Learning Path
+allowed-tools: Read
+---
+
 # My Learning Path
 
 Get a personalized learning path tailored to your goals, experience level, and timeframe.

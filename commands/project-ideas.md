@@ -1,3 +1,9 @@
+---
+name: project-ideas
+description: Project Ideas
+allowed-tools: Read
+---
+
 # Project Ideas
 
 Get hands-on project ideas to build real skills. Projects tailored to your current level and goals.
