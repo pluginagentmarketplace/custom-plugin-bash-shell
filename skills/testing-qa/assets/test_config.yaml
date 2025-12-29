@@ -1,8 +1,0 @@
-# Testing Configuration
-unit:
-  framework: jest
-  coverage: 80
-integration:
-  framework: supertest
-e2e:
-  framework: playwright

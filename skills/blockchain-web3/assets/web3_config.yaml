@@ -1,9 +1,0 @@
-# Web3 Configuration
-network: ethereum
-rpc_url: https://mainnet.infura.io/v3/YOUR_KEY
-contracts:
-  - ERC20
-  - ERC721
-tools:
-  - hardhat
-  - ethers.js

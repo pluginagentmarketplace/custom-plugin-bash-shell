@@ -1,8 +1,8 @@
 {
-  "name": "custom-plugin-bash-shell",
+  "name": "bash-shell-assistant",
   "version": "2.1.0",
   "displayName": "Developer Roadmap Learning & Career Plugin v2.1",
-  "description": "Master 65+ developer roles with ultra-detailed, AI-guided learning paths. Comprehensive career guidance with code examples, project ideas, interview prep, and production-grade skill modules for every tech career path.",
+  "description": "Bash shell scripting plugin with agents for scripting, automation, and command-line tools",
   "author": "Claude Code Community",
   "license": "SEE LICENSE IN LICENSE",
   "repository": {
@@ -18,34 +18,13 @@
     "professional-development"
   ],
   "agents": [
-    {
-      "name": "backend-developer",
-      "description": "Backend development, APIs, server architecture, databases & frameworks"
-    },
-    {
-      "name": "frontend-developer",
-      "description": "Frontend development, web frameworks, styling, UX/UI optimization"
-    },
-    {
-      "name": "cloud-devops-engineer",
-      "description": "Cloud platforms, infrastructure, DevOps, containers, deployment"
-    },
-    {
-      "name": "database-data-specialist",
-      "description": "Databases, data engineering, data analysis, big data, pipelines"
-    },
-    {
-      "name": "mobile-developer",
-      "description": "Mobile development, native apps, cross-platform, performance"
-    },
-    {
-      "name": "ai-ml-engineer",
-      "description": "AI/ML engineering, machine learning, deep learning, LLMs, data science"
-    },
-    {
-      "name": "system-architect",
-      "description": "System design, architecture patterns, scalability, security, performance"
-    }
+    "./agents/01-bash-fundamentals.md",
+    "./agents/02-text-processing.md",
+    "./agents/03-file-operations.md",
+    "./agents/04-process-management.md",
+    "./agents/05-networking.md",
+    "./agents/06-automation.md",
+    "./agents/07-shell-tools.md"
   ],
   "commands": [
     {
@@ -82,86 +61,13 @@
     }
   ],
   "skills": [
-    {
-      "name": "backend-frameworks",
-      "description": "Node.js, Spring Boot, Laravel, ASP.NET Core, API development"
-    },
-    {
-      "name": "frontend-frameworks",
-      "description": "React, Vue, Angular, Next.js, CSS, HTML, design systems"
-    },
-    {
-      "name": "cloud-platforms",
-      "description": "AWS, GCP, Azure, cloud architecture, multi-cloud strategies"
-    },
-    {
-      "name": "devops-tools",
-      "description": "Docker, Kubernetes, CI/CD, Terraform, infrastructure automation"
-    },
-    {
-      "name": "databases-sql",
-      "description": "PostgreSQL, MySQL, database design, optimization, scaling"
-    },
-    {
-      "name": "nosql-data",
-      "description": "MongoDB, Redis, ElasticSearch, data pipelines, caching"
-    },
-    {
-      "name": "mobile-platforms",
-      "description": "Android, iOS, Flutter, React Native, cross-platform development"
-    },
-    {
-      "name": "ai-ml-frameworks",
-      "description": "TensorFlow, PyTorch, scikit-learn, ML pipelines, model deployment"
-    },
-    {
-      "name": "llm-ai-agents",
-      "description": "LLMs, prompt engineering, AI agents, autonomous systems"
-    },
-    {
-      "name": "data-engineering",
-      "description": "ETL, data lakes, warehousing, big data tools, streaming"
-    },
-    {
-      "name": "system-design",
-      "description": "Scalability, high availability, distributed systems, microservices"
-    },
-    {
-      "name": "design-patterns",
-      "description": "Software patterns, architectural patterns, SOLID principles"
-    },
-    {
-      "name": "security-compliance",
-      "description": "Application security, infrastructure security, compliance standards"
-    },
-    {
-      "name": "performance-optimization",
-      "description": "Web performance, database optimization, system tuning"
-    },
-    {
-      "name": "testing-qa",
-      "description": "Unit testing, integration testing, E2E testing, test automation"
-    },
-    {
-      "name": "code-review",
-      "description": "Code quality, best practices, refactoring, code reviews"
-    },
-    {
-      "name": "devrel-community",
-      "description": "Developer relations, technical writing, community building"
-    },
-    {
-      "name": "product-management",
-      "description": "Product strategy, technical PM, roadmapping"
-    },
-    {
-      "name": "leadership-mentoring",
-      "description": "Engineering management, team leadership, career development"
-    },
-    {
-      "name": "blockchain-web3",
-      "description": "Blockchain, smart contracts, crypto, Web3 development"
-    }
+    "./skills/bash-basics/SKILL.md",
+    "./skills/text-processing/SKILL.md",
+    "./skills/file-operations/SKILL.md",
+    "./skills/process-management/SKILL.md",
+    "./skills/shell-networking/SKILL.md",
+    "./skills/shell-automation/SKILL.md",
+    "./skills/shell-tools/SKILL.md"
   ],
   "hooks": {
     "supported": [
