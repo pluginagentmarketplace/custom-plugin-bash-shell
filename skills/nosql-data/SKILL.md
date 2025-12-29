@@ -1,7 +1,13 @@
 ---
+sasmp_version: "1.3.0"
+bonded_agent: database-data-specialist
+bond_type: PRIMARY_BOND
 name: nosql-data
 description: NoSQL databases MongoDB, Redis, ElasticSearch. Learn document databases, caching, and distributed data.
 ---
+sasmp_version: "1.3.0"
+bonded_agent: database-data-specialist
+bond_type: PRIMARY_BOND
 
 # nosql data
 

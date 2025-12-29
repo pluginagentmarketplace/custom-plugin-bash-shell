@@ -1,0 +1,8 @@
+# Flutter/Mobile Configuration
+flutter:
+  sdk: ">=3.0.0"
+  null_safety: true
+platforms:
+  - android
+  - ios
+state_management: riverpod

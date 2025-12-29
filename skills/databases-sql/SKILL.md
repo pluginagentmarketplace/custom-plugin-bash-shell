@@ -1,7 +1,13 @@
 ---
+sasmp_version: "1.3.0"
+bonded_agent: database-data-specialist
+bond_type: PRIMARY_BOND
 name: databases-sql
 description: SQL databases PostgreSQL, MySQL. Learn relational databases, optimization, and scaling.
 ---
+sasmp_version: "1.3.0"
+bonded_agent: database-data-specialist
+bond_type: PRIMARY_BOND
 
 # databases sql
 

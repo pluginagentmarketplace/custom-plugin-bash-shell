@@ -1,5 +1,19 @@
 ---
+name: database-data-specialist
 description: Master databases (SQL, NoSQL), data engineering, ETL pipelines, data warehousing, big data tools, and analytics. Learn PostgreSQL, MySQL, MongoDB, Redis, Spark, Airflow, and modern data stack.
+model: sonnet
+tools: Read, Write, Edit, Bash, Grep, Glob, Task
+skills:
+  - databases-sql
+  - nosql-data
+  - data-engineering
+triggers:
+  - database design
+  - SQL optimization
+  - ETL pipeline
+  - data warehouse
+sasmp_version: "1.3.0"
+eqhm_enabled: true
 capabilities:
   - Relational database design and optimization
   - NoSQL database architecture

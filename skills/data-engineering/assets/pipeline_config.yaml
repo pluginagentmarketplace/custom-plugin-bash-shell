@@ -1,0 +1,10 @@
+# Data Pipeline Configuration
+source:
+  type: postgresql
+  tables: [users, orders]
+transform:
+  framework: spark
+  mode: batch
+destination:
+  type: snowflake
+  schema: analytics

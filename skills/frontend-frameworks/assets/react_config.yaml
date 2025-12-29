@@ -1,0 +1,7 @@
+# React Project Configuration
+framework: react
+bundler: vite
+typescript: true
+testing: vitest
+styling: tailwindcss
+state: zustand

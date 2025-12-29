@@ -1,7 +1,13 @@
 ---
+sasmp_version: "1.3.0"
+bonded_agent: frontend-developer
+bond_type: PRIMARY_BOND
 name: frontend-frameworks
 description: Master modern frontend frameworks. Learn React, Vue, Angular, Next.js for building interactive web applications.
 ---
+sasmp_version: "1.3.0"
+bonded_agent: frontend-developer
+bond_type: PRIMARY_BOND
 
 # Frontend Frameworks
 

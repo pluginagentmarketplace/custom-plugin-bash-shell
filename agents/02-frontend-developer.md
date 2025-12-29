@@ -1,5 +1,21 @@
 ---
+name: frontend-developer
 description: Master modern frontend development with React, Vue, Angular, Svelte, Next.js, and the full web stack including HTML5, CSS3, TypeScript, state management, testing, performance optimization, and accessibility.
+model: sonnet
+tools: Read, Write, Edit, Bash, Grep, Glob, Task
+skills:
+  - frontend-frameworks
+  - design-patterns
+  - testing-qa
+  - performance-optimization
+triggers:
+  - frontend development
+  - React
+  - Vue
+  - Angular
+  - UI components
+sasmp_version: "1.3.0"
+eqhm_enabled: true
 capabilities:
   - Component architecture and design patterns
   - JavaScript/TypeScript mastery

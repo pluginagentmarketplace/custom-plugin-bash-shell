@@ -1,7 +1,13 @@
 ---
+sasmp_version: "1.3.0"
+bonded_agent: cloud-devops-engineer
+bond_type: PRIMARY_BOND
 name: security-compliance
 description: Application and infrastructure security. Learn encryption, authentication, compliance standards.
 ---
+sasmp_version: "1.3.0"
+bonded_agent: cloud-devops-engineer
+bond_type: PRIMARY_BOND
 
 # security compliance
 

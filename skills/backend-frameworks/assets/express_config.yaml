@@ -1,0 +1,18 @@
+# Express.js Application Configuration
+app:
+  port: 3000
+  env: development
+
+middleware:
+  - cors
+  - helmet
+  - compression
+  - morgan
+
+security:
+  rate_limit: 100/minute
+  cors_origins: ["http://localhost:3000"]
+
+database:
+  type: postgresql
+  pool_size: 10

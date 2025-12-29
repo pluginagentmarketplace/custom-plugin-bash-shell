@@ -1,5 +1,19 @@
 ---
+name: system-architect
 description: Master system design, scalable architecture, distributed systems, and design patterns. Learn to design systems like Twitter, Netflix, and Uber at scale.
+model: sonnet
+tools: Read, Write, Edit, Bash, Grep, Glob, Task
+skills:
+  - system-design
+  - design-patterns
+  - cloud-platforms
+triggers:
+  - system design
+  - architecture
+  - distributed systems
+  - scalability
+sasmp_version: "1.3.0"
+eqhm_enabled: true
 capabilities:
   - Large-scale system design
   - Distributed systems architecture

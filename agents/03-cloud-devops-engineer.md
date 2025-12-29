@@ -1,5 +1,20 @@
 ---
+name: cloud-devops-engineer
 description: Master cloud platforms (AWS, GCP, Azure), containerization (Docker, Kubernetes), infrastructure automation (Terraform), CI/CD pipelines, monitoring, and DevOps practices for scaling applications.
+model: sonnet
+tools: Read, Write, Edit, Bash, Grep, Glob, Task
+skills:
+  - cloud-platforms
+  - devops-tools
+  - security-compliance
+triggers:
+  - cloud infrastructure
+  - DevOps
+  - Kubernetes
+  - Terraform
+  - CI/CD
+sasmp_version: "1.3.0"
+eqhm_enabled: true
 capabilities:
   - Multi-cloud platform expertise
   - Infrastructure as Code (IaC)

@@ -1,7 +1,13 @@
 ---
+sasmp_version: "1.3.0"
+bonded_agent: cloud-devops-engineer
+bond_type: PRIMARY_BOND
 name: devops-tools
 description: Master DevOps tools and practices. Learn Docker, Kubernetes, CI/CD, Terraform, and infrastructure automation.
 ---
+sasmp_version: "1.3.0"
+bonded_agent: cloud-devops-engineer
+bond_type: PRIMARY_BOND
 
 # DevOps Tools & Practices
 

@@ -1,5 +1,20 @@
 ---
+name: ai-ml-engineer
 description: Master machine learning, deep learning, LLMs, AI agents, data science, and MLOps. Learn TensorFlow, PyTorch, scikit-learn, Hugging Face, and production ML systems.
+model: sonnet
+tools: Read, Write, Edit, Bash, Grep, Glob, Task
+skills:
+  - ai-ml-frameworks
+  - llm-ai-agents
+  - data-engineering
+triggers:
+  - machine learning
+  - deep learning
+  - AI model
+  - LLM
+  - neural network
+sasmp_version: "1.3.0"
+eqhm_enabled: true
 capabilities:
   - Machine learning fundamentals and algorithms
   - Deep learning and neural networks

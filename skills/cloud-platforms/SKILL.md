@@ -1,7 +1,13 @@
 ---
+sasmp_version: "1.3.0"
+bonded_agent: cloud-devops-engineer
+bond_type: PRIMARY_BOND
 name: cloud-platforms
 description: Master cloud platforms AWS, GCP, Azure. Learn compute, storage, networking, and building scalable cloud systems.
 ---
+sasmp_version: "1.3.0"
+bonded_agent: cloud-devops-engineer
+bond_type: PRIMARY_BOND
 
 # Cloud Platforms
 

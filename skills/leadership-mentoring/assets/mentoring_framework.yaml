@@ -1,0 +1,11 @@
+# Mentoring Framework
+1on1:
+  frequency: weekly
+  duration: 30min
+topics:
+  - career_growth
+  - technical_challenges
+  - feedback
+goals:
+  - skill_development
+  - career_progression

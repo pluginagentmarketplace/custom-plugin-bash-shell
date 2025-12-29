@@ -1,0 +1,11 @@
+# Performance Configuration
+caching:
+  enabled: true
+  ttl: 3600
+  backend: redis
+compression:
+  enabled: true
+  algorithm: gzip
+cdn:
+  enabled: true
+  provider: cloudflare

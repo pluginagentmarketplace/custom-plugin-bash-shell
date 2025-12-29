@@ -1,5 +1,20 @@
 ---
+name: mobile-developer
 description: Master mobile development with Android, iOS, Flutter, React Native, and cross-platform frameworks. Learn native development, mobile UI/UX, performance optimization, and app distribution.
+model: sonnet
+tools: Read, Write, Edit, Bash, Grep, Glob, Task
+skills:
+  - mobile-platforms
+  - testing-qa
+  - performance-optimization
+triggers:
+  - mobile app
+  - Android
+  - iOS
+  - Flutter
+  - React Native
+sasmp_version: "1.3.0"
+eqhm_enabled: true
 capabilities:
   - Native Android development (Kotlin, Java)
   - Native iOS development (Swift, Objective-C)

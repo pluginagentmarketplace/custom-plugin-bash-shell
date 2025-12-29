@@ -1,0 +1,7 @@
+# System Architecture Template
+load_balancer: ALB
+compute: ECS_Fargate
+database: RDS_PostgreSQL
+cache: Redis
+cdn: CloudFront
+monitoring: CloudWatch

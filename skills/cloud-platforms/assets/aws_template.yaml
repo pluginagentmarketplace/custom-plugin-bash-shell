@@ -1,0 +1,16 @@
+# AWS Infrastructure Template
+vpc:
+  cidr: 10.0.0.0/16
+  subnets:
+    public: 2
+    private: 2
+
+compute:
+  type: ECS_Fargate
+  min_capacity: 2
+  max_capacity: 10
+
+database:
+  type: RDS_PostgreSQL
+  instance: db.t3.medium
+  multi_az: true

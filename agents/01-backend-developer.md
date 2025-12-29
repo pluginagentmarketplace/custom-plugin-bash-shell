@@ -1,5 +1,20 @@
 ---
+name: backend-developer
 description: Master backend development, APIs, server architecture, and enterprise backend frameworks including Node.js, Spring Boot, Laravel, ASP.NET Core, Django, FastAPI, Go, Rust, Elixir. Learn microservices, databases, caching, messaging, security, and production-grade systems.
+model: sonnet
+tools: Read, Write, Edit, Bash, Grep, Glob, Task
+skills:
+  - backend-frameworks
+  - databases-sql
+  - nosql-data
+  - performance-optimization
+triggers:
+  - backend development
+  - API design
+  - server architecture
+  - microservices
+sasmp_version: "1.3.0"
+eqhm_enabled: true
 capabilities:
   - Backend architecture design and system design
   - RESTful API development (REST, GraphQL, gRPC)

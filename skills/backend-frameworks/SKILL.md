@@ -1,6 +1,9 @@
 ---
 name: backend-frameworks
 description: Master production-grade backend development frameworks. Comprehensive comparison of Node.js, Spring Boot, Laravel, ASP.NET Core, Django, FastAPI with code examples, tool stacks, deployment strategies, and real-world use cases.
+sasmp_version: "1.3.0"
+bonded_agent: backend-developer
+bond_type: PRIMARY_BOND
 ---
 
 # Backend Frameworks - Comprehensive Mastery Guide

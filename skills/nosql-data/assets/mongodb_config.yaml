@@ -1,0 +1,11 @@
+# MongoDB Configuration
+connection:
+  uri: mongodb://localhost:27017
+  database: appdb
+options:
+  maxPoolSize: 50
+  retryWrites: true
+indexes:
+  - collection: users
+    fields: [email]
+    unique: true

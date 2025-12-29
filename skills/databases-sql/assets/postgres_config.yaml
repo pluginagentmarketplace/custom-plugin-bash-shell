@@ -1,0 +1,15 @@
+# PostgreSQL Configuration
+connection:
+  host: localhost
+  port: 5432
+  database: appdb
+  pool_size: 20
+
+performance:
+  shared_buffers: 256MB
+  work_mem: 64MB
+  maintenance_work_mem: 128MB
+
+indexing:
+  types: [btree, gin, gist]
+  auto_vacuum: true
