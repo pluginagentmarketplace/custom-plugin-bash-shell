@@ -1,21 +1,23 @@
 {
-  "name": "bash-shell-assistant",
-  "version": "2.1.0",
-  "displayName": "Developer Roadmap Learning & Career Plugin v2.1",
-  "description": "Bash shell scripting plugin with agents for scripting, automation, and command-line tools",
+  "name": "bash-shell-mastery",
+  "version": "2.0.0",
+  "displayName": "Bash Shell Mastery Plugin",
+  "description": "Production-grade Bash shell scripting plugin with comprehensive agents for scripting, automation, and command-line mastery",
   "author": "Claude Code Community",
   "license": "SEE LICENSE IN LICENSE",
   "repository": {
     "type": "git",
-    "url": "https://github.com/kamranahmedse/developer-roadmap"
+    "url": "https://github.com/pluginagentmarketplace/custom-plugin-bash-shell"
   },
   "keywords": [
-    "developer-roadmap",
-    "career-guidance",
-    "learning-paths",
-    "skill-assessment",
-    "tech-careers",
-    "professional-development"
+    "bash",
+    "shell",
+    "scripting",
+    "automation",
+    "devops",
+    "command-line",
+    "linux",
+    "unix"
   ],
   "agents": [
     "./agents/01-bash-fundamentals.md",
@@ -29,35 +31,35 @@
   "commands": [
     {
       "name": "explore-roadmap",
-      "description": "Explore a specific developer role roadmap in detail"
+      "description": "Explore a specific Bash learning roadmap"
     },
     {
       "name": "my-learning-path",
-      "description": "Get personalized learning path based on your goals"
+      "description": "Get personalized Bash learning path"
     },
     {
       "name": "compare-roles",
-      "description": "Compare two developer roles side-by-side"
+      "description": "Compare shell scripting roles"
     },
     {
       "name": "skill-assessment",
-      "description": "Assess your skills against industry standards"
+      "description": "Assess your Bash skills"
     },
     {
       "name": "find-my-role",
-      "description": "Discover the perfect developer role for you"
+      "description": "Discover ideal shell scripting role"
     },
     {
       "name": "career-progression",
-      "description": "Plan your career growth and skill development"
+      "description": "Plan your DevOps career growth"
     },
     {
       "name": "project-ideas",
-      "description": "Get hands-on project ideas for skill building"
+      "description": "Get hands-on Bash project ideas"
     },
     {
       "name": "interview-prep",
-      "description": "Prepare for technical interviews for your target role"
+      "description": "Prepare for shell scripting interviews"
     }
   ],
   "skills": [
@@ -72,10 +74,9 @@
   "hooks": {
     "supported": [
       "user-prompt-submit",
-      "command-execution",
       "agent-invocation"
     ]
   },
   "minClaudeVersion": "2.0.0",
-  "releaseNotes": "v2.1.0: Ultra-detailed comprehensive enhancement with production-grade content, code examples, tool comparisons, real-world scenarios, advanced commands, intelligent hooks, comprehensive documentation"
+  "releaseNotes": "v2.0.0: Production-grade update with comprehensive agents featuring input/output schemas, error handling patterns, troubleshooting guides, and code examples following 2024-2025 best practices"
 }

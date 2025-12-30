@@ -2,30 +2,174 @@
   "hooks": [
     {
       "event": "user-prompt-submit",
-      "description": "Career exploration - suggest roadmap exploration",
+      "description": "Bash scripting help - suggest fundamentals agent",
       "conditions": {
         "keywords": [
-          "learn",
-          "career",
-          "developer",
-          "role",
-          "path",
-          "skill",
-          "technology",
-          "frontend",
-          "backend",
-          "cloud",
-          "data",
-          "ai",
-          "ml",
-          "mobile"
+          "bash",
+          "script",
+          "shell",
+          "variable",
+          "function",
+          "loop",
+          "if",
+          "case",
+          "syntax",
+          "shebang"
         ]
       },
       "actions": [
         {
-          "type": "suggest-command",
-          "command": "/explore-roadmap",
-          "message": "Explore a specific developer role? Try /explore-roadmap [role]"
+          "type": "suggest-agent",
+          "agent": "01-bash-fundamentals",
+          "message": "Need Bash help? The Bash Fundamentals agent can assist with scripts, variables, and control flow."
+        }
+      ]
+    },
+    {
+      "event": "user-prompt-submit",
+      "description": "Text processing help - suggest text processing agent",
+      "conditions": {
+        "keywords": [
+          "grep",
+          "sed",
+          "awk",
+          "regex",
+          "pattern",
+          "search",
+          "replace",
+          "filter",
+          "text",
+          "parse"
+        ]
+      },
+      "actions": [
+        {
+          "type": "suggest-agent",
+          "agent": "02-text-processing",
+          "message": "Text processing task? The Text Processing agent specializes in grep, sed, awk, and regex."
+        }
+      ]
+    },
+    {
+      "event": "user-prompt-submit",
+      "description": "File operations help - suggest file operations agent",
+      "conditions": {
+        "keywords": [
+          "chmod",
+          "permission",
+          "find",
+          "tar",
+          "archive",
+          "zip",
+          "rsync",
+          "copy",
+          "backup",
+          "symlink"
+        ]
+      },
+      "actions": [
+        {
+          "type": "suggest-agent",
+          "agent": "03-file-operations",
+          "message": "File operation? The File Operations agent handles permissions, archives, and file management."
+        }
+      ]
+    },
+    {
+      "event": "user-prompt-submit",
+      "description": "Process management help - suggest process agent",
+      "conditions": {
+        "keywords": [
+          "process",
+          "kill",
+          "signal",
+          "cron",
+          "job",
+          "background",
+          "daemon",
+          "ps",
+          "top",
+          "schedule"
+        ]
+      },
+      "actions": [
+        {
+          "type": "suggest-agent",
+          "agent": "04-process-management",
+          "message": "Process management? The Process agent handles jobs, signals, and scheduling."
+        }
+      ]
+    },
+    {
+      "event": "user-prompt-submit",
+      "description": "Networking help - suggest networking agent",
+      "conditions": {
+        "keywords": [
+          "curl",
+          "ssh",
+          "port",
+          "network",
+          "http",
+          "api",
+          "dns",
+          "ping",
+          "connection",
+          "request"
+        ]
+      },
+      "actions": [
+        {
+          "type": "suggest-agent",
+          "agent": "05-networking",
+          "message": "Network task? The Networking agent specializes in curl, SSH, and network debugging."
+        }
+      ]
+    },
+    {
+      "event": "user-prompt-submit",
+      "description": "Automation help - suggest automation agent",
+      "conditions": {
+        "keywords": [
+          "automate",
+          "ci",
+          "cd",
+          "deploy",
+          "makefile",
+          "github actions",
+          "pipeline",
+          "test",
+          "bats"
+        ]
+      },
+      "actions": [
+        {
+          "type": "suggest-agent",
+          "agent": "06-automation",
+          "message": "Automation task? The Automation agent handles CI/CD, deployment, and testing."
+        }
+      ]
+    },
+    {
+      "event": "user-prompt-submit",
+      "description": "Shell tools help - suggest tools agent",
+      "conditions": {
+        "keywords": [
+          "jq",
+          "json",
+          "xargs",
+          "parallel",
+          "pipeline",
+          "sort",
+          "uniq",
+          "cut",
+          "column"
+        ]
+      },
+      "actions": [
+        {
+          "type": "suggest-agent",
+          "agent": "07-shell-tools",
+          "message": "Data processing? The Shell Tools agent specializes in jq, xargs, and pipelines."
         }
       ]
     },
@@ -34,43 +178,20 @@
       "description": "Learning path planning",
       "conditions": {
         "keywords": [
+          "learn bash",
           "learning path",
-          "curriculum",
-          "personalized",
           "beginner",
           "intermediate",
           "advanced",
-          "how long",
-          "roadmap"
+          "roadmap",
+          "curriculum"
         ]
       },
       "actions": [
         {
           "type": "suggest-command",
           "command": "/my-learning-path",
-          "message": "Get personalized learning path: /my-learning-path [role]"
-        }
-      ]
-    },
-    {
-      "event": "user-prompt-submit",
-      "description": "Role comparison",
-      "conditions": {
-        "keywords": [
-          "compare",
-          "versus",
-          "vs",
-          "difference",
-          "choose between",
-          "which is better",
-          "similar"
-        ]
-      },
-      "actions": [
-        {
-          "type": "suggest-command",
-          "command": "/compare-roles",
-          "message": "Compare roles: /compare-roles [role1] [role2]"
+          "message": "Get personalized Bash learning path: /my-learning-path bash --level beginner"
         }
       ]
     },
@@ -83,7 +204,7 @@
           "evaluate",
           "level",
           "proficiency",
-          "benchmark",
+          "how good",
           "where am i"
         ]
       },
@@ -91,112 +212,63 @@
         {
           "type": "suggest-command",
           "command": "/skill-assessment",
-          "message": "Assess your skills: /skill-assessment [role]"
+          "message": "Assess your Bash skills: /skill-assessment bash"
         }
       ]
     },
     {
       "event": "user-prompt-submit",
-      "description": "Role discovery",
-      "conditions": {
-        "keywords": [
-          "find",
-          "discover",
-          "suitable",
-          "which role",
-          "interested in",
-          "right for me"
-        ]
-      },
-      "actions": [
-        {
-          "type": "suggest-command",
-          "command": "/find-my-role",
-          "message": "Find your ideal role: /find-my-role --interests [keywords]"
-        }
-      ]
-    },
-    {
-      "event": "user-prompt-submit",
-      "description": "Career growth",
-      "conditions": {
-        "keywords": [
-          "career growth",
-          "progression",
-          "advance",
-          "promotion",
-          "senior",
-          "next step"
-        ]
-      },
-      "actions": [
-        {
-          "type": "suggest-command",
-          "command": "/career-progression",
-          "message": "Plan progression: /career-progression --from [current] --to [target]"
-        }
-      ]
-    },
-    {
-      "event": "user-prompt-submit",
-      "description": "Projects and practice",
+      "description": "Project ideas",
       "conditions": {
         "keywords": [
           "project",
           "build",
           "practice",
           "hands-on",
-          "portfolio",
-          "exercise"
+          "exercise",
+          "portfolio"
         ]
       },
       "actions": [
         {
           "type": "suggest-command",
           "command": "/project-ideas",
-          "message": "Get project ideas: /project-ideas [role] --level beginner"
+          "message": "Get Bash project ideas: /project-ideas bash --level beginner"
         }
       ]
     },
     {
       "event": "user-prompt-submit",
-      "description": "Interview prep",
+      "description": "Interview preparation",
       "conditions": {
         "keywords": [
           "interview",
           "prepare",
           "question",
-          "system design",
-          "coding",
-          "technical interview"
+          "devops interview",
+          "shell interview"
         ]
       },
       "actions": [
         {
           "type": "suggest-command",
           "command": "/interview-prep",
-          "message": "Prepare for interviews: /interview-prep [role]"
+          "message": "Prepare for shell scripting interviews: /interview-prep devops"
         }
       ]
     }
   ],
   "automation": {
     "enabled": true,
-    "intelligence": "advanced",
+    "intelligence": "context-aware",
     "features": [
       "smart-keyword-detection",
-      "contextual-suggestions",
-      "learning-flow-guidance",
-      "personalized-recommendations"
+      "contextual-agent-suggestions",
+      "skill-level-adaptation"
     ]
   },
   "telemetry": {
-    "enabled": true,
-    "track": [
-      "role-popularity",
-      "learning-paths-created",
-      "command-usage",
-      "user-interests"
-    ]
+    "enabled": false,
+    "note": "Privacy-first: no tracking by default"
   }
 }
