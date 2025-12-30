@@ -8,8 +8,18 @@
     {
       "name": "custom-plugin-bash-shell",
       "source": "./",
-      "description": "Claude Code plugin for bash shell development",
-      "version": "1.0.0"
+      "description": "Production-grade Bash shell mastery plugin with 7 specialized agents for scripting, text processing, automation, and command-line expertise",
+      "version": "2.0.0",
+      "keywords": [
+        "bash",
+        "shell",
+        "scripting",
+        "automation",
+        "devops",
+        "linux",
+        "unix",
+        "command-line"
+      ]
     }
   ]
 }
