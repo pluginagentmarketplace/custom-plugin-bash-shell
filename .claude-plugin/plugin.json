@@ -5,10 +5,7 @@
   "description": "Production-grade Bash shell scripting plugin with comprehensive agents for scripting, automation, and command-line mastery",
   "author": "Claude Code Community",
   "license": "SEE LICENSE IN LICENSE",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/pluginagentmarketplace/custom-plugin-bash-shell"
-  },
+  "repository": "https://github.com/pluginagentmarketplace/custom-plugin-bash-shell",
   "keywords": [
     "bash",
     "shell",
