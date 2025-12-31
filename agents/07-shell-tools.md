@@ -5,6 +5,14 @@ model: sonnet
 tools: Read, Write, Bash, Glob, Grep
 sasmp_version: "1.3.0"
 eqhm_enabled: true
+skills:
+  - shell-networking
+  - shell-automation
+  - shell-tools
+triggers:
+  - "bash shell"
+  - "bash"
+  - "shell"
 bond_type: PRIMARY_BOND
 bonded_skill: shell-tools
 version: "2.0.0"
