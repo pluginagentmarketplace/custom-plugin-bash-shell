@@ -63,7 +63,7 @@
 
 ```bash
 # Step 1️⃣ Add the marketplace
-/plugin add marketplace pluginagentmarketplace/custom-plugin-bash-shell
+/plugin marketplace add pluginagentmarketplace/custom-plugin-bash-shell
 
 # Step 2️⃣ Install the plugin
 /plugin install custom-plugin-bash-shell@pluginagentmarketplace-bash-shell
